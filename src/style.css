@@ -1,0 +1,116 @@
+:root {
+  /* Apply Vazirmatn font globally */
+  font-family: 'Vazirmatn', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  direction: rtl; /* Ensure RTL direction */
+  text-align: right; /* Default text alignment */
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87); /* Default text color for light mode */
+  background-color: #F5F5F5; /* Default background for light mode */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BTitr', sans-serif;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--v-theme-background); /* Use Vuetify background color */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Vuetify overrides if necessary (example) */
+.v-application {
+  font-family: 'Vazirmatn', sans-serif !important; /* Force font for Vuetify components */
+}
+
+/* Ensure icons align correctly in RTL - Keep this for other potential icons */
+/* .v-list-item__prepend .v-icon {
+  margin-inline-end: 16px !important;
+  margin-inline-start: 0 !important;
+} */
+
+.v-list-item__append .v-icon {
+ margin-inline-start: 16px !important;
+ margin-inline-end: 0 !important;
+}
+
+/* Ensure all Persian text uses Vazirmatn font */
+.persian-text {
+  font-family: 'Vazirmatn', sans-serif !important;
+}
+
+/* Transition animations */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.list-move,
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px); /* Adjust for RTL if needed */
+}
+
+.list-leave-active {
+  position: absolute;
+}
+
+/* RTL specific fixes for input fields */
+.v-field__input {
+  text-align: right !important;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #121212; /* Default dark background */
+  }
+  /* Add specific dark mode overrides if Vuetify's theme isn't sufficient */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Consider dark mode color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1; /* Consider dark mode color */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; /* Consider dark mode color */
+}
