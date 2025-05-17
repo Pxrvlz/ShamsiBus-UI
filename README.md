@@ -1,5 +1,33 @@
-# Vue 3 + TypeScript + Vite
+<div dir="rtl">
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## معرفی
+این پروژه یک سامانه کنترل پایانه اتوبوس هست که با استفاده از می‌توان ایجاد کاربر،اتوبوس،سفر و مدیریت آنهارا انجام داد. این پروژه نسخه ماک دیتا هست و فقط برای نمایش هست.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## نیازمندی‌ها
+برای نصب و استفاده از این برنامه، نیاز به نرم‌افزارهای زیر دارید:
+- **Node.js** و **npm** (برای اجرای رابط کاربری Vue.js)
+
+## مراحل نصب
+
+### ۱. نصب و راه‌اندازی رابط کاربری Vue.js
+اول، dependenciesهای Vue.js را نصب کنید:
+
+```bash
+npm install
+```
+برای شروع پروژه Vue.js:
+
+```bash
+npm run dev
+```
+### ۲. استفاده از رابط کاربری Vue.js
+
+برای مشاهده رابط کاربری، به آدرس داده شده توسط اپ برید برای مثال:
+
+```
+http://localhost:5174/
+```
+#### ساخته شده با:
+
+- [Vue](https://vuejs.org)
+</div>
